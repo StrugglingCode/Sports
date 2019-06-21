@@ -1,6 +1,8 @@
 package com.example.sports
 
 import android.content.Context
+import android.content.Intent
+import android.support.v4.content.ContextCompat
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -25,6 +27,15 @@ var sport:Sport = sportDatabase?.sportList?.get(position) ?: Sport("No Name","No
 
         sportItem.sport_image.setImageResource(sport._sportImage ?:R.drawable.placeholder)
         sportItem.sport_textView.setText(sport._sportName)
+
+        sportItem.setOnClickListener {
+
+            val intent = Intent(context,SportDetails::class.java)
+            intent.putExtra("image",sport._sportImage)
+            intent.putExtra("details",sport._sportDetail)
+            ContextCompat.startActivity(context!!,intent,null)
+
+        }
 
         return sportItem
 

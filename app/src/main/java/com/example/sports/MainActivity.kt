@@ -8,9 +8,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        var sportAdapter = SportAdapter(this@MainActivity )
- grid_view.adapter = sportAdapter
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        var sportAdapter = SportAdapter(this@MainActivity )
+        gridView.adapter = sportAdapter
     }
 }

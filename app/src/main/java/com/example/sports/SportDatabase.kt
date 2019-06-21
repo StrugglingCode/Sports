@@ -18,7 +18,7 @@ class SportDatabase {
                 "is a form of performance art and entertainment that combines athletics with theatrical performance.",
             R.drawable.wrestling))
 
-        sportList?.add(Sport("Taekwondo","Taekwondo is a combative sport " +
+       sportList?.add(Sport("Taekwondo","Taekwondo is a combative sport " +
                 "and was developed during the 1940s and 1950s by Korean martial artists " +
                 "with experience in martial arts such as karate, Chinese martial arts," +
                 " and indigenous Korean martial arts traditions such as Taekkyon, Subak, and Gwonbeop.",R.drawable.taekwondo))
